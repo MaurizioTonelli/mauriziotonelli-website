@@ -1,0 +1,35 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import landing from './landing.png'
+import description from './description.png'
+import shot1 from './shot-1.png'
+import shot2 from './shot-2.png'
+
+export const project = {
+  author: 'Maurizio Tonelli',
+  thumbnail: landing,
+  title: "Financial Planning Software for Architects and Construction Companies",
+  description:
+    'This project was built for a client that offers SaaS services for construction companies. It serves as project management and financial reporting software for architects.',
+  ranking: 1,
+}
+
+export const metadata = {
+  title: project.title,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+This project was built for a client that offers SaaS services for construction companies. It serves as project management and financial reporting software for architects.
+
+A landing page was also built for the client to capture leads and potential SaaS customers.
+
+## Landing page
+<Image src={landing} alt="" />
+<Image src={description} alt="" />
+
+## Product screenshots
+<Image src={shot1} alt="" />
+<Image src={shot2} alt="" />
+
+

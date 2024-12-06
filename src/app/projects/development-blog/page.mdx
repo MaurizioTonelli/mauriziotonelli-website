@@ -1,0 +1,33 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import home from './home.jpg'
+import shot1 from './shot-1.png'
+import shot2 from './shot-2.png'
+import shot3 from './shot-3.png'
+
+export const project = {
+  author: 'Maurizio Tonelli',
+  thumbnail: home,
+  title: "Development blog",
+  description:
+    "This is a personal development blog that is no longer active, since the articles are being migrated to this website instead and will soon be available. I wrote articles about Javascript development for beginner and intermediate developers.",
+  ranking: 5,
+}
+
+export const metadata = {
+  title: project.title,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+This is a personal development blog that is no longer active, since the articles are being migrated to this website instead and will soon be available. I wrote articles about Javascript development for beginner and intermediate developers.
+
+## Home page
+<Image src={home} alt="" />
+
+## Blog screenshots
+<Image src={shot1} alt="" />
+<Image src={shot2} alt="" />
+<Image src={shot3} alt="" />
+
+

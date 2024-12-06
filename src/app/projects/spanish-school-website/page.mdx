@@ -1,0 +1,33 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import landing from './landing.png'
+import schedule from './schedule.png'
+import application from './application.png'
+
+export const project = {
+  author: 'Maurizio Tonelli',
+  thumbnail: landing,
+  title: "Spanish School's website",
+  description:
+    'Habla Hispana is a Spanish school located in Mexico that hosts students eager to learn Spanish from all around the world. However, they were experiencing issues with their website and online applications, which led to a drop in their Google rankings due to the lack of mobile responsiveness and insecure site connections.',
+  ranking: 4,
+}
+
+export const metadata = {
+  title: project.title,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+Habla Hispana is a Spanish school located in Mexico that hosts students eager to learn Spanish from all around the world. However, they were experiencing issues with their website and online applications, which led to a drop in their Google rankings due to the lack of mobile responsiveness and insecure site connections, as they were still using HTTP instead of HTTPS.
+
+## Home page
+<Image src={landing} alt="" />
+
+## Schedule and calendar page
+<Image src={schedule} alt="" />
+
+## Application
+The new website incorporates ReCAPTCHA v3 to validate new applicants, notifies school personnel via email whenever someone applies, and automatically sends a response to potential students with further instructions.
+<Image src={application} alt="" />
+

@@ -1,0 +1,42 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import landingPage from './landing.png'
+import nassauTournament from './nassau-tournament.png'
+import nassauBrackets from './nassau-brackets.png'
+import medalTournament from './medal-tournament.png'
+import medalDetail from './medal-detail.png'
+import dashboard from './dashboard.png'
+
+export const project = {
+  author: 'Maurizio Tonelli',
+  thumbnail: nassauTournament,
+  title: 'Golf Tournaments Website and Dashboard',
+  description:
+    'The website features a dashboard for creating and managing golf tournaments, a landing page, and several pages for each tournament modality, including rankings, daily scores, and brackets.',
+  ranking: 2,
+}
+
+export const metadata = {
+  title: project.title,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+I built this golf tournament website for a company that offers a mobile golf betting app.
+
+They needed a complete website to manage the live scoring of their tournaments, based on real-time input from the golf players participating in each tournament.
+
+The website features a dashboard for creating and managing tournaments, a landing page, and several pages for each tournament modality, including rankings, daily scores, and brackets.
+## Tournament dashboard
+This is where the tournament is created and managed. You can create and assign players to tournaments, each player is then assigned to certain rounds so that they can modify and track their own scorecards through the app.
+<Image src={dashboard} alt="" />
+## Landing page
+The website landing page is a very simple page that includes a basic call to action and social proof to add credibility to the business.
+<Image src={landingPage} alt="" />
+## Tournament live score viewer
+There are several types of tournaments that can be configured through the dashboard, and the live score can be viewed in real time on the websites below.
+<Image src={nassauTournament} alt="" />
+<Image src={nassauBrackets} alt="" />
+<Image src={medalTournament} alt="" />
+<Image src={medalDetail} alt="" />
+

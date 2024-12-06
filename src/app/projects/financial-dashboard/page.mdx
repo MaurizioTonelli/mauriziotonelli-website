@@ -1,0 +1,39 @@
+import { ProjectLayout } from '@/components/ProjectLayout'
+import shot1 from './shot-1.png'
+import shot2 from './shot-2.png'
+
+export const project = {
+  author: 'Maurizio Tonelli',
+  thumbnail: shot1,
+  title: "Financial dashboard",
+  description:
+    "The goal of this project is to help clients make better financial and business decisions by providing a clear view of their business's health. This project was designed in Figma, developed using React and Node.js, and features a MySQL database backend hosted on AWS.",
+  ranking: 3,
+}
+
+export const metadata = {
+  title: project.title,
+  description: project.description,
+}
+
+export default (props) => <ProjectLayout project={project} {...props} />
+
+This dashboard includes several sections for displaying financial data, such as:
+
+- Accounts Payable (AP)
+- Accounts Receivable (AR)
+- Cash Flow
+- Balance Sheet
+- Profit & Loss Statement
+- And more
+
+
+The goal of this project is to help clients make better financial and business decisions by providing a clear view of their business's health.
+
+This project was designed in Figma, developed using React and Node.js, and features a MySQL database backend hosted on AWS.
+
+## Product screenshots
+<Image src={shot1} alt="" />
+<Image src={shot2} alt="" />
+
+
